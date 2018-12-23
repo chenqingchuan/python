@@ -1,0 +1,10 @@
+import requests
+import os
+import time
+ 
+def openwifi():
+    os.system('netsh wlan connect name=i-NUIST')
+    time.sleep(1)
+     
+def killtask():
+    os.system('taskkill /f /im Chrome.exe ')
